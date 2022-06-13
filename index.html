@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon 1.png">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/c6e0062d0c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-221277022-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-221277022-1');
+</script>
+
+
+
+</head>
+<body>
+
+  <div id="toggle"></div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#playlist">Playlist</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="../index.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+  
+
+      <!-- <div class="nav-bar">
+
+        <a href="../index.html" class="brand">
+          <img src="images/logorednew.png" alt="">
+        </a>
+    
+        <div class="menu-btn"></div>
+        <div class="navigation">
+          <div class="navigation-items">
+            <a href="index.html">Home</a>
+            <a href="#playlist">Playlist</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="../index.html"><span>My Portfolio</span></a>
+          </div>
+        </div>
+      </div> -->
+         
+
+        <div class="scroll-indicator-bar"></div>
+        
+    </header>
+  
+      <section class="home">
+
+        
+        <video class="video-slide active" src="videos/vid1.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="videos/vid2.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="videos/vid3.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="videos/vid4.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="videos/vid5.mp4" autoplay muted loop></video>
+        
+        
+        
+        
+        <div class="content active">
+          <h1>Awesome <br><span>Place</span></h1>
+          <p>My wish is to stay always like this, living quietly in a corner of nature.</p>
+          <!-- <a href="#gallery">See More</a> -->
+        </div>
+        <div class="content">
+          <h1>Mountain<br><span>hiking</span></h1>
+          <p>Every time I am in the mountains, I am just so thankful to be there.</p>
+          <!-- <a href="#gallery">See More</a> -->
+        </div>
+        <div class="content">
+          <h1>Outdoor<br><span>Freedom</span></h1>
+          <p>Hiking in undiscovered places is a lot of fun.</p>
+          <!-- <a href="#gallery">See More</a> -->
+        </div>
+        <div class="content">
+          <h1>Magic<br><span>View</span></h1>
+          <p> If I am seeking creative ideas, I go out into the mountains.</p>
+          <!-- <a href="#gallery">See More</a> -->
+        </div>
+        <div class="content">
+          <h1>Nature<br><span>Relax</span></h1>
+          <p>An early morning walk is a blessing for the whole day. </p>
+          <!-- <a href="#gallery">See More</a> -->
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/radka.krenova" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/radka.__/?fbclid=IwAR2dRahUAPNzRhSNn1YCqloGLu619paCc6m846cXL0fmrFJOFzFGaKePRI4" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/radka-krenova-00b39b84/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/rad1k-k" target="_blank"><i class="fab fa-github"></i></a>
+          
+          
+          
+        </div>
+        <div class="slider-navigation">
+          <div class="nav-btn active"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+        </div>
+      </section>
+
+
+
+
+      <!-- MUSIC PLAYER -->
+
+
+<section class="music" id="playlist">
+  <!-- <video src="vid-bck/vid (49).mp4" class="vid-bg" autoplay loop muted></video> -->
+
+
+      <h1>MUSIC</h1>
+      <p>I have created Audio Player with some songs from my favorite Playlist.</p>
+
+
+
+
+    <div class="music-player">
+      
+      <div class="wrapper">
+
+        <div class="top-bar">
+          <!-- <i class="material-icons">expand_more</i> -->
+          <!-- <span>Now Playing</span> -->
+          <!-- <i class="material-icons">more_horiz</i> -->
+        </div>
+    
+        <div class="img-area">
+          <img src="" alt="">
+        </div>
+    
+        <div class="song-details">
+          <p class="name"></p>
+          <p class="artist"></p>
+        </div>
+    
+        <div class="progress-area">
+          <div class="progress-bar">
+            <audio id="main-audio" src=""></audio>
+          </div>
+    
+          <div class="song-timer">
+            <span class="current-time">0:00</span>
+            <span class="max-duration">0:00</span>
+          </div>
+        </div>
+    
+        <div class="controls">
+          <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+          <i id="prev" class="material-icons">skip_previous</i>
+          <div class="play-pause">
+            <i class="material-icons play">play_arrow</i>
+          </div>
+          <i id="next" class="material-icons">skip_next</i>
+          <i id="more-music" class="material-icons">queue_music</i>
+        </div>
+    
+        <div class="music-list">
+          <div class="header">
+            <div class="row">
+              <i class= "list material-icons">queue_music</i>
+              <span>Music list</span>
+            </div>
+            <i id="close" class="material-icons">close</i>
+          </div>
+    
+          <ul>
+            <!-- li are coming from js -->
+          </ul> 
+        </div>
+    
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+<section class="gallery" id="gallery">
+
+  <h1>GALLERY</h1>
+  <p>When I´m not working, I like to spend time outdoors. I love to go on long walks, climb mountains, ride my bike and enjoy being active.
+
+  </p>
+
+  <div class="ig">
+
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+        
+    <iframe src="https://cdn.lightwidget.com/widgets/b4fabba67cb35abfa319cbe3d0f88aae.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+
+  </div>
+
+  
+</section>
+  
+
+
+
+<footer>
+  <div class="row" id="contact">
+      <div class="col">
+        <a href="index.html"><img src="images/logorednew.png" class="logo"></a>
+        <p>I am Front End Developer and UX Designer interested in designing and building websites.</p>
+      </div>
+      <div class="col">
+          <h3>Address<div class="underline"><span></span></div></h3>
+          <p>Austria</p> <br>
+          <p>Czech Republic</p> <br>
+          <p>Remote&nbsp;work&nbsp;-&nbsp;anywhere</p> <br>
+
+          <!-- <p class="email-id">rad.krenova@gmail.com</p> -->
+          
+      </div>
+      <div class="col">
+          <h3>Links <div class="underline"><span></span></div></h3>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html #playlist">Playlist</a></li>
+              <li><a href="index.html #gallery">Gallery</a></li>
+              <li><a href="index.html #contact">Contact</a></li>
+              <li><a href="../index.html">Portfolio</a></li>
+          </ul>
+      </div>
+      <div class="col">
+          <h3>Contact <div class="underline"><span></span></div></h3>
+          <p>Let's connect. If you want to chat about an upcoming project, send me a message. I will respond as soon as possible.<br>
+          </p>
+
+          <br> <br>
+         
+          <div class="social-icons">
+
+            <a href="https://www.facebook.com/radka.krenova" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+
+            <a href="https://www.instagram.com/radka.__/?fbclid=IwAR2dRahUAPNzRhSNn1YCqloGLu619paCc6m846cXL0fmrFJOFzFGaKePRI4" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+            <a href="https://www.linkedin.com/in/radka-krenova-00b39b84/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+            <a href="https://github.com/rad1k-k" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+            <a href="mailto:info@radkakrenova.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+             
+          </div>
+      </div>
+  </div>
+  <hr>
+  <p class="copyright">&copy; Radka Krenova 2022</p>
+</footer>
+
+
+
+         
+          
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+<script src="music-list.js"></script>
+<script src="script.js"></script>
+
+    
+</body>
+</html>
